@@ -1,0 +1,13 @@
+br\edu\infnet\votaluanbruno\VotoLoader.class
+br\edu\infnet\votaluanbruno\CandidatoLoader.class
+br\edu\infnet\votaluanbruno\model\domain\Voto.class
+br\edu\infnet\votaluanbruno\model\repository\EleitorRepository.class
+br\edu\infnet\votaluanbruno\model\domain\Eleicao.class
+br\edu\infnet\votaluanbruno\VotaluanbrunoApplication.class
+br\edu\infnet\votaluanbruno\model\domain\Candidato.class
+br\edu\infnet\votaluanbruno\model\repository\CandidatoRepository.class
+br\edu\infnet\votaluanbruno\model\domain\Eleitor.class
+br\edu\infnet\votaluanbruno\model\repository\EleicaoRepository.class
+br\edu\infnet\votaluanbruno\EleicaoLoader.class
+br\edu\infnet\votaluanbruno\model\repository\VotoRepository.class
+br\edu\infnet\votaluanbruno\EleitorLoader.class
