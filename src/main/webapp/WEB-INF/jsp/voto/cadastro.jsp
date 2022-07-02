@@ -39,7 +39,7 @@
 		
 	  	<div class="mb-3 mt-3">
 	      <label>Eleição:</label>
-	      <input type="text" class="form-control" value="${eleicao.descricao }" readonly>
+	      <input type="text" class="form-control" value="${eleicao.descricao}" >
 	    </div>
 	    
 	    <div class="form-group">
@@ -57,7 +57,7 @@
 		  		<label>Não existem candidatos!!!</label>
 		  	</c:if>
 		</div>
-		<input type="hidden" name="eleicao" value="${eleicao.id}">
+<%-- 		<input type="hidden"  name="eleicao" value="${eleicao.id}"> --%>
 	    <div class="mb-3 mt-3">
 	      <label>localizacao:</label>
 	      <input type="text" class="form-control" placeholder="Entre com a localizacao" name="localizacao" value="rua primeira">

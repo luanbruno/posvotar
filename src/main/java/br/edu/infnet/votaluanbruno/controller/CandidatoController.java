@@ -18,38 +18,37 @@ public class CandidatoController {
 	private CandidatoService candidatoService;
 	@Autowired
 	private EleicaoService eleicaoService;
-	
+
 	@GetMapping(value = "/candidato")
 	public String cadastro(Model model) {
 		model.addAttribute("eleicoes", eleicaoService.obterLista());
 
 		return "candidato/cadastro";
-		
+
 	}
+
 	@GetMapping(value = "/candidatos")
 	public String lista(Model model) {
-		
-		model.addAttribute("lista",candidatoService.obterLista());
-		
+
+		model.addAttribute("lista", candidatoService.obterLista());
+
 		return "candidato/lista";
-		
+
 	}
 
 	@PostMapping(value = "/candidato/incluir")
 	public String incluir(Candidato candidato) {
-		
+
 		candidatoService.incluir(candidato);
 
-
-		
 		return "redirect:/candidatos";
-		
+
 	}
-	
+
 	@GetMapping(value = "/candidato/{id}/excluir")
 	public String excluir(@PathVariable Integer id) {
-			candidatoService.excluir(id);
+		candidatoService.excluir(id);
 		return "redirect:/candidatos";
-		
+
 	}
 }
