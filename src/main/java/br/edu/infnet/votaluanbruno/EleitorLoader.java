@@ -3,6 +3,7 @@ package br.edu.infnet.votaluanbruno;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import br.edu.infnet.votaluanbruno.model.domain.Eleitor;
@@ -10,6 +11,7 @@ import br.edu.infnet.votaluanbruno.model.service.EleitorService;
 
 
 @Component
+@Order(4)
 public class EleitorLoader implements ApplicationRunner{
 	
 	
@@ -21,7 +23,7 @@ public class EleitorLoader implements ApplicationRunner{
 			
 		Eleitor eleitor = new Eleitor();
 			eleitor.setCodigo("3232");
-			eleitor.setNome("luan");
+			eleitor.setNome("luan bruno souza");
 			eleitor.setEmail("luan@luan.com");
 			eleitor.setTelefone("5555-5555");
 			eleitor.setToken("1597849");

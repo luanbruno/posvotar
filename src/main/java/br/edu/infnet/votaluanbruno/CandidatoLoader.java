@@ -3,6 +3,7 @@ package br.edu.infnet.votaluanbruno;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import br.edu.infnet.votaluanbruno.model.domain.Candidato;
@@ -10,6 +11,7 @@ import br.edu.infnet.votaluanbruno.model.service.CandidatoService;
 
 
 @Component
+@Order(2)
 public class CandidatoLoader implements ApplicationRunner{
 	
 	

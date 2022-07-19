@@ -12,9 +12,10 @@ public class Eleicao {
 	private List<Voto> votos;
 
 	private List<Candidato> candidatos;
-
+		
 	public Eleicao() {
 		this.setData(LocalDateTime.now());
+
 	}
 
 	public Integer getId() {

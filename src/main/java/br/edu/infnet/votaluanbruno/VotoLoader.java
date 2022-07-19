@@ -2,10 +2,12 @@ package br.edu.infnet.votaluanbruno;
 
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 
 @Component
+@Order(5)
 public class VotoLoader implements ApplicationRunner{
 	
 		

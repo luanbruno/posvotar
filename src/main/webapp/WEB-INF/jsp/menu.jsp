@@ -13,6 +13,10 @@
 	      <li><a href="/eleitores">Eleitor</a></li>
 	      <li><a href="/votos">Voto</a></li>
     </ul>
-    
+    <ul class="nav navbar-nav navbar-right">
+				<li><a href="/usuario">SignUP</a></li>
+				<li><a href="/login">Login</a></li>
+			
+		</ul>
   </div>
 </nav>
